@@ -1,0 +1,176 @@
+.projects {
+
+  margin-bottom: 68px;
+
+  &__heading {
+    margin-bottom: 15px;
+    font-family: 'TTFirsNeue-Bold';
+  }
+
+  &__grid-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 190px);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  &__grid-cell {
+    width: 100%;
+  }
+
+  &__grid-1 {
+    background-image: url(../img/projects1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__grid-2 {
+    background-image: url(../img/projects2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__grid-3 {
+    background-image: url(../img/projects3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__grid-4 {
+    position: relative;
+    width: 630px;
+    min-height: 300px;
+  }
+
+  &__grid-4::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../img/projects4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__grid-5 {
+    position: relative;
+    grid-row: 2;
+    width: 630px;
+    min-height: 300px;
+  }
+
+  &__grid-5::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../img/projects5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__grid-6 {
+    grid-row: 2;
+    grid-column: 4 / span 5;
+    background-image: url(../img/projects6.png);
+    background-repeat: no-repeat;
+  }
+
+  &__grid-7 {
+    width: 300px;
+    grid-row: 2;
+    grid-column: 8;
+    padding-left: 5px;
+    background-image: url(../img/projects7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__grid-cell {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  &__big-grid-cell {
+    padding-top: 29px;
+    padding-left: 29px;
+  }
+
+  &__tag {
+    @include tag-bg;
+    top: 7px;
+    right: 7px;
+  }
+
+  &__item-descr {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__date {
+    position: relative;
+    padding-left: 17px;
+    font-size: 12px;
+  }
+
+  &__date::before {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 15px;
+    top: -3px;
+    left: -4px;
+    background-repeat: no-repeat;
+    background-image: url(../img/calendar.png);
+  }
+
+  &__big-grid-cell>&__date::before {
+    left: 0;
+    background-image: url(../img/calendar-white.png);
+  }
+
+  &__grid-cell>&__date {
+    color: $text-light-grey;
+  }
+
+  &__big-grid-cell>.big-grid-descr {
+    max-width: 292px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__big-grid {
+    position: relative;
+    color: $primary-white;
+    z-index: 5;
+  }
+
+  &__grid-4>&__item-heading {
+    max-width: 210px;
+  }
+
+  &__item>&__item-heading {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-family: 'TTFirsNeue-Bold';
+  }
+
+  &__grid-6, &__grid-7>&__item-descr {
+    max-width: 300px;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 28px;
+    padding: 15px 22px;
+    border: 3px solid $primary-orange;
+  }
+
+}

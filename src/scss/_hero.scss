@@ -1,0 +1,81 @@
+.hero {
+  margin-bottom: 68px;
+
+  &__container {
+    padding-top: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+
+  &__left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    min-height: 630px;
+    padding-left: 58px;
+    padding-bottom: 62px;
+    background-image: url(../img/hero-img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__heading,
+  &__events-heading,
+  &__btn {
+    color: $primary-white;
+  }
+
+  &__right-heading{
+    margin-bottom: 21px;
+    font-family: 'TTFirsNeue-Bold';
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  &__tag {
+    @include tag-bg;
+    top: 21px;
+    right: 17px;
+  }
+
+  &__heading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  &__events-heading {
+    max-width: 427px;
+    margin-bottom: 18px;
+    font-family: 'TTFirsNeue-Bold';
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  &__btn {
+    width: 159px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 15px 13px 22px;
+  }
+  
+  &__list {
+    display: grid;
+    grid-template-columns: minmax(278px, 630px) 1fr;
+    grid-template-rows: 1fr 257px;
+    gap: 30px;
+  }
+
+  &__grid-item-1 {
+    grid-column: 1 / span 2;
+  }
+
+  &__grid-item-2 {
+    grid-column: 1;
+  } 
+}

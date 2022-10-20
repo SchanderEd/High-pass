@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto-Regular', 'sans-serif';
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+@media (max-width: 1180px) {
+  .container {
+    max-width: 995px;
+  }
+}
+
+.reset-btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: $primary-white;
+  outline: none;
+}
+
+.reset-link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reset-input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reset-h {
+  margin: 0;
+  padding: 0;
+}
+
+.reset-p {
+  margin: 0;
+  padding: 0;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 20px;
+}

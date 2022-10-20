@@ -1,0 +1,8 @@
+@mixin tag-bg {
+    position: absolute;
+    padding: 7px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $primary-white;
+    background-color: $tag-bg;
+}

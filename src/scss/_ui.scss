@@ -1,0 +1,105 @@
+// link
+
+.link-ui {
+  outline: none;
+  color: $primary-white;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.link-ui:hover {
+  color: $primary-orange;
+}
+
+.link-ui:active {
+  color: $click-orange;
+}
+
+.link-ui:focus {
+  outline: none;
+  background-color: $hover-orange;
+}
+
+.projects__btn {
+  outline: none;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.projects__btn:hover {
+  background-color: $primary-orange;
+}
+
+.projects__btn:focus {
+  background-color: $hover-orange;
+}
+
+.projects__btn:active {
+  background-color: $click-orange;
+  border-color: transparent;
+}
+
+// button
+
+.btn-ui {
+  width: 126px;
+  outline: none;
+  border: 3px solid transparent;
+  background-color: $primary-orange;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.btn-ui:hover {
+  background-color: $hover-orange;
+}
+
+.btn-ui:focus {
+  border-color: $click-orange;
+}
+
+.btn-ui:active {
+  background-color: $click-orange;
+}
+
+.logo:focus {
+  outline: none;
+}
+
+.social-link {
+  outline: none;
+}
+
+.social-icon {
+  fill: #CACACA;
+  transition: fill .3s ease-in-out;
+}
+
+.social-link:hover .social-icon {
+  fill: $primary-orange;
+}
+
+.social-link:active .social-icon {
+  fill: $click-orange;
+}
+
+.social-link:focus .social-icon {
+  fill: $hover-orange;
+}
+
+// input
+
+.input-ui {
+  outline: none;
+  border: 1px solid transparent;
+  transition: border-color .3s ease-in-out;
+}
+
+.input-ui:focus {
+  border-color: $primary-orange;
+}
+
+.input-ui::placeholder {
+  transition: color .3s ease-in-out;
+}
+
+.input-ui:hover::placeholder {
+  color: $primary-orange;
+}
